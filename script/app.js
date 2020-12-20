@@ -50,36 +50,6 @@ const newStuff = new Chatroom('general', username);
 
 // Get all the chats and actively listen to any kind of changes from the database
 newStuff.getChats(data => display.display(data));
-// setTimeout(()=>chatWindow.lastElementChild.scrollIntoView(),300)c
-
-// window.setTimeout(()=> {
-// 	chatWindow.lastElementChild.scrollIntoView()}, 3000);
-chatWindow.addEventListener('click', e => {
-	if(e.target.tagName === 'LI'){
-		console.log(e.target.id);
-}
-});
 
 
-	// display in browser majjale
-// const displayf =  (item, id) => {
-//     const mes = item.message;
-//     samay = item.created_at.toDate();
-//     const usernaam = item.username;
-    
-//     const html = `
-//     <li>
-//     ${mes}
-//     <br>
-//     <span class='small_text'>${samay}</span>
-//     <span class='small_text'>${usernaam}</span>
-//     </li>
-//     `;
-//     display.innerHTML += html;
-// }
 
-// db.collection('chats')
-// .where('room', '==')
-// .onSnapshot(snapshot => {
-//     snapshot.docChanges().forEach(change=>)
-// })
