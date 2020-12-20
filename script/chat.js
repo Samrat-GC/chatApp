@@ -30,7 +30,7 @@ class Chatroom {
                 snapshot.docChanges().forEach(change => {
                     if(change.type === 'added'){
                         // update the UI
-                        callback(change.doc);
+                        callback(change.doc.data());
 
                     }else if(change.type === 'removed'){
                         
