@@ -39,9 +39,6 @@ class Chatroom {
 
 				})
 			};
-
-
-				// document.querySelector('.chat_list').lastElementChild.scrollIntoView();
 						
   
     updateName(username){
