@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+}
+
+*, ::before, ::after{
+	box-sizing: border-box;
+}
+
+.container{
+    max-width: 600px;
+}
+
+.btn{
+    background: #96c048;
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-focus{
+    outline: none !important;
+}
+
+.chat-list{
+    height: 400px;
+    overflow: auto;
+}
+
+.bold{
+	font-weight: bold;
+	display: inline-block;
+	margin-right: .2rem;
+}
+
+h1{
+	margin-top: 1rem !important;
+}
