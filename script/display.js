@@ -1,4 +1,6 @@
-class DisplayChat{
+import { formatDistanceToNow } from 'date-fns';
+
+export default class DisplayChat{
     constructor(list){
         this.list = list;
     }
@@ -6,8 +8,8 @@ class DisplayChat{
 		wipe(){
 			this.list.innerHTML = '';
 		}
-    async display(data){
-				const fns = dateFns.distanceInWordsToNow(data.created_at.toDate(), {addSuffix: true})
+    display(data){
+				const fns = formatDistanceToNow(data.created_at.toDate(), {addSuffix: true})
         const html = `
         <li class="list-group-item">
             <span class="username bold">${data.username}:</span>

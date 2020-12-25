@@ -1,4 +1,4 @@
-class Chatroom {
+export default class Chatroom {
     constructor(room, username){
         this.room = room;
         this.username = username;

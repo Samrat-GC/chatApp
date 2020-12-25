@@ -3,6 +3,10 @@ const chat = document.querySelector('.new-chat');
 const user = document.querySelector('.new-name');
 const chatWindow = document.querySelector('.chat-window .chat-list');
 const update_name = document.querySelector('.update_name');
+let activeChatRoom = 'general';
+import Chatroom from './chat.js';
+import DisplayChat from './display.js';
+
 
 
 // Check for the saved username in localstorage if any
